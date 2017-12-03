@@ -156,6 +156,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
         resetButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -1074,6 +1075,8 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/courier/asset/icon.png"))); // NOI18N
 
+        jLabel50.setText("https://github.com/maretadss/PengirimanBarang.git");
+
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
 
@@ -1115,12 +1118,15 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                         .addGap(87, 87, 87)
                         .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addComponent(resetButton)
-                        .addGap(40, 40, 40)
-                        .addComponent(viewButton)
-                        .addGap(44, 44, 44)
-                        .addComponent(closeButton)))
+                        .addGap(78, 78, 78)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel50)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(resetButton)
+                                .addGap(40, 40, 40)
+                                .addComponent(viewButton)
+                                .addGap(44, 44, 44)
+                                .addComponent(closeButton)))))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -1128,7 +1134,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1137,14 +1143,15 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                             .addComponent(viewButton, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(resetButton, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(closeButton))
-                        .addGap(93, 93, 93))
-                    .addGroup(layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabel50))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(pengirimPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(penerimaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(1313, 718));
@@ -1572,6 +1579,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
