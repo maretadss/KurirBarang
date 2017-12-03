@@ -34,16 +34,16 @@ public class TarifFileDAO {
                 String[] data = line.split(",");
                 
                 Tarif tarif = new Tarif();
-                tarif.setKotaTujuan(data[0]);
+                tarif.setKotaTujuan(data[0].trim());
                 
                 Tipe tipe = new Tipe();
-                tarif.setJasaLayanan(tipe);
+                tarif.setTipeLayanan(tipe);
                 
-                tarif.getJasaLayanan().setReg(Double.parseDouble(data[1].trim()));
-                tarif.getJasaLayanan().setKilat(Double.parseDouble(data[2].trim()));
-                tarif.getJasaLayanan().setSds(Double.parseDouble(data[3].trim()));
-                tarif.getJasaLayanan().setOns(Double.parseDouble(data[4].trim()));
-                tarif.getJasaLayanan().setHds(Double.parseDouble(data[5].trim()));
+                tarif.getTipeLayanan().setECO(Double.parseDouble(data[1].trim()));
+                tarif.getTipeLayanan().setREG(Double.parseDouble(data[2].trim()));
+                tarif.getTipeLayanan().setONS(Double.parseDouble(data[3].trim()));
+                tarif.getTipeLayanan().setHDS(Double.parseDouble(data[4].trim()));
+                tarif.getTipeLayanan().setSDS(Double.parseDouble(data[5].trim()));
 
                 daftarTarifs.add(tarif);
 

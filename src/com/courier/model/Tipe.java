@@ -11,80 +11,80 @@ package com.courier.model;
  */
 public class Tipe {
     
-    private double reg;
-    private double kilat;
-    private double sds;
-    private double ons;
-    private double hds;
+    private double REG;
+    private double ECO;
+    private double SDS;
+    private double ONS;
+    private double HDS;
 
     /**
      * @return the reg
      */
-    public double getReg() {
-        return reg;
+    public double getREG() {
+        return REG;
     }
 
     /**
      * @param reg the reg to set
      */
-    public void setReg(double reg) {
-        this.reg = reg;
+    public void setREG(double reg) {
+        this.REG = reg;
     }
 
     /**
-     * @return the kilat
+     * @return the eco
      */
-    public double getKilat() {
-        return kilat;
+    public double getECO() {
+        return ECO;
     }
 
     /**
-     * @param kilat the kilat to set
+     * @param eco the eco to set
      */
-    public void setKilat(double kilat) {
-        this.kilat = kilat;
+    public void setECO(double eco) {
+        this.ECO = eco;
     }
 
     /**
      * @return the sds
      */
-    public double getSds() {
-        return sds;
+    public double getSDS() {
+        return SDS;
     }
 
     /**
      * @param sds the sds to set
      */
-    public void setSds(double sds) {
-        this.sds = sds;
+    public void setSDS(double sds) {
+        this.SDS = sds;
     }
 
     /**
      * @return the ons
      */
-    public double getOns() {
-        return ons;
+    public double getONS() {
+        return ONS;
     }
 
     /**
      * @param ons the ons to set
      */
-    public void setOns(double ons) {
-        this.ons = ons;
+    public void setONS(double ons) {
+        this.ONS = ons;
     }
 
     /**
      * @return the hds
      */
-    public double getHds() {
-        return hds;
+    public double getHDS() {
+        return HDS;
     }
 
     /**
      * @param hds the hds to set
      */
-    public void setHds(double hds) {
-        this.hds = hds;
+    public void setHDS(double hds) {
+        this.HDS = hds;
     }
    
     

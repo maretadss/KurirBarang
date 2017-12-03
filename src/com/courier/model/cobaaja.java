@@ -17,6 +17,10 @@ public class cobaaja {
         TarifFileDAO tff = new  TarifFileDAO();
         Tarif ta = new Tarif();
         ta = tff.getTarifs().get(1);
-        System.out.println(ta.getJasaLayanan().getOns()+" "+ ta.getJasaLayanan().getHds() +ta.getKotaTujuan());
+        
+        Paket pa = new Paket();
+        pa.setHargaBarang(5000000);
+        System.out.println(pa.totalBiayaREGWithAsuransi(3));
+        System.out.println(ta.getTipeLayanan().getSDS()+" "+ ta.getTipeLayanan().getHDS() +ta.getKotaTujuan());
     }
 }
