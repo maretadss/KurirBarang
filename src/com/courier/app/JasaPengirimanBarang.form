@@ -2003,7 +2003,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel50">
       <Properties>
-        <Property name="text" type="java.lang.String" value="https://github.com/maretadss/PengirimanBarang.git"/>
+        <Property name="text" type="java.lang.String" value="https://github.com/maretadss/KurirBarang.git"/>
       </Properties>
     </Component>
   </SubComponents>

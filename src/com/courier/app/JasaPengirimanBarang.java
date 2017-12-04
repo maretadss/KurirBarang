@@ -1278,7 +1278,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/courier/asset/icon.png"))); // NOI18N
 
-        jLabel50.setText("https://github.com/maretadss/PengirimanBarang.git");
+        jLabel50.setText("https://github.com/maretadss/KurirBarang.git");
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
