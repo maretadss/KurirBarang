@@ -12,7 +12,9 @@ import com.courier.model.Pengirim;
 import com.courier.model.Tarif;
 import java.awt.Color;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
@@ -83,6 +85,8 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
         jnsPembayaranView = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         dimensiView = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        totalbayarView = new javax.swing.JLabel();
         penerimaPanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -252,13 +256,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
 
         dimensiView.setText("-");
 
+        jLabel53.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel53.setText("TOTAL BAYAR");
+
+        totalbayarView.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        totalbayarView.setText("-");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(printButton, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(333, 333, 333)
+                .addComponent(printButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addGap(311, 311, 311))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
@@ -281,7 +291,8 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel52)
                                             .addComponent(jLabel48)
-                                            .addComponent(jLabel47))
+                                            .addComponent(jLabel47)
+                                            .addComponent(jLabel53))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -298,37 +309,39 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                                                 .addComponent(jLabel42)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(tglkirimView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(asuransiView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jnsPembayaranView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jnsLayananView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(totalbayarView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                            .addGap(10, 10, 10)
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(asuransiView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jnsPembayaranView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jnsLayananView, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(388, 388, 388)
+                                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)))
                         .addGap(30, 30, 30))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel43)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel51)
-                                        .addComponent(jLabel46))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(beratView, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jnsBarangView, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(dimensiView, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE))
+                        .addGap(418, 418, 418))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(82, 82, 82)
                         .addComponent(jLabel44)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel45)
-                        .addGap(132, 132, 132))))
+                        .addGap(132, 132, 132))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel51)
+                            .addComponent(jLabel46))
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(beratView, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jnsBarangView, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dimensiView, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -376,16 +389,20 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                     .addComponent(jnsPembayaranView)
                     .addComponent(jLabel49)
                     .addComponent(dimensiView))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(totalbayarView))
+                .addGap(57, 57, 57)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel45)
                     .addComponent(jLabel44))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane4)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE))
                 .addGap(50, 50, 50)
-                .addComponent(printButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(printButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -403,7 +420,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
             .addGroup(viewDialogLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1317,7 +1334,9 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
         paket.setNoPaket(noPaket.getText());
         paket.setTanggalKirim(tglkirimpaketDateChooser.getDate());
         nopaketView.setText("" + noPaket.getText());
-        tglkirimView.setText("" + tglkirimpaketDateChooser.getDate());
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+//        Date tanggalKirim = sdf.parse(""+tglkirimpaketDateChooser.getDate());
+        tglkirimView.setText(""+tglkirimpaketDateChooser.getDate());
 
         Tarif tarif = new Tarif();
         paket.setPaketTarif(tarif);
@@ -1330,10 +1349,18 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
         beratPaketTransaksi.setText(berat + " Kg");
         beratView.setText(beratPaket.getText() + " Kg");
         jnsBarangView.setText(jnsBarangComboBox.getSelectedItem()+"");
-        dimensiView.setText(YADimensi.getActionCommand()+"");
-        jnsLayananView.setText(jensiLayananbuttonGroup.getSelection().toString()+"");
-        asuransiView.setText(asuransibuttonGroup.getSelection().toString()+"");
-        jnsPembayaranView.setText(pembayaranbuttonGroup.getSelection().toString()+"");
+//        dimensiView.setText(YADimensi.isSelected()+"");
+//        jnsLayananView.setText(jensiLayananbuttonGroup.getSelection()+"");
+//        asuransiView.setText(asuransibuttonGroup.getSelection()+"");
+        if(CASH.isSelected()){
+            jnsPembayaranView.setText("CASH");
+        }
+        if(CREDIT.isSelected()){
+            jnsPembayaranView.setText("CREDIT Card");
+        }
+        if(DEBIT.isSelected()){
+            jnsPembayaranView.setText("DEBIT");
+        }
         
 
         DecimalFormat df = new DecimalFormat("###,###.##");
@@ -1345,14 +1372,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                 String asuransi = df.format(paket.biayaAsuransi(indexKota));
                 asuransiTransaksi.setText("Rp. " + asuransi);
                 totalBayar.setText("Rp. " + formatregas);
-            }
+                asuransiView.setText("Rp. " + asuransi);
+                totalbayarView.setText("Rp. " + formatregas);
+           }
             if (TIDAKAsuransi.isSelected()) {
                 String formatreg = df.format(paket.totalBiayaECONonAsuransi(indexKota));
                 totalBayar.setText("Rp. " + formatreg);
                 asuransiTransaksi.setText("NO");
+                totalbayarView.setText("Rp. " + formatreg);
+                asuransiView.setText("NO");
             }
             jnsLayananTransaksi.setText("ECO");
             KETTIPE.setText("Ket. 4 hari");
+            jnsLayananView.setText("ECO");
         }
 
         if (REG.isSelected()) {
@@ -1362,14 +1394,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                 String asuransi = df.format(paket.biayaAsuransi(indexKota));
                 asuransiTransaksi.setText("Rp. " + asuransi);
                 totalBayar.setText("Rp. " + formatregas);
+                asuransiView.setText("Rp. " + asuransi);
+                totalbayarView.setText("Rp. " + formatregas);
             }
             if (TIDAKAsuransi.isSelected()) {
                 String formatsds = df.format(paket.totalBiayaREGNonAsuransi(indexKota));
                 totalBayar.setText("Rp. " + formatsds);
                 asuransiTransaksi.setText("NO");
+                totalbayarView.setText("Rp. " + formatsds);
+                asuransiView.setText("NO");
             }
             jnsLayananTransaksi.setText("REG");
             KETTIPE.setText("Ket. 2 hari");
+            jnsLayananView.setText("REG");
         }
 
         if (ONS.isSelected()) {
@@ -1379,14 +1416,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                 String asuransi = df.format(paket.biayaAsuransi(indexKota));
                 asuransiTransaksi.setText("Rp. " + asuransi);
                 totalBayar.setText("Rp. " + formatregas);
+                asuransiView.setText("Rp. " + asuransi);
+                totalbayarView.setText("Rp. " + formatregas);
             }
             if (TIDAKAsuransi.isSelected()) {
                 String formathds = df.format(paket.totalBiayaONSNonAsuransi(indexKota));
                 totalBayar.setText("Rp. " + formathds);
                 asuransiTransaksi.setText("NO");
+                totalbayarView.setText("Rp. " + formathds);
+                asuransiView.setText("NO");
             }
             jnsLayananTransaksi.setText("ONS");
             KETTIPE.setText("Ket. 1 hari");
+            jnsLayananView.setText("ONS");
         }
 
         if (HDS.isSelected()) {
@@ -1396,14 +1438,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                 String asuransi = df.format(paket.biayaAsuransi(indexKota));
                 asuransiTransaksi.setText("Rp. " + asuransi);
                 totalBayar.setText("Rp. " + formatkilas);
+                asuransiView.setText("Rp. " + asuransi);
+                totalbayarView.setText("Rp. " + formatkilas);
             }
             if (TIDAKAsuransi.isSelected()) {
                 String formatexpress = df.format(paket.totalBiayaHDSNonAsuransi(indexKota));
                 totalBayar.setText("Rp. " + formatexpress);
                 asuransiTransaksi.setText("NO");
+                totalbayarView.setText("Rp. " + formatexpress);
+                asuransiView.setText("NO");
             }
             jnsLayananTransaksi.setText("HDS");
             KETTIPE.setText("Ket. 1 hari");
+            jnsLayananView.setText("HDS");
         }
 
         if (SDS.isSelected()) {
@@ -1413,14 +1460,19 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                 String asuransi = df.format(paket.biayaAsuransi(indexKota));
                 asuransiTransaksi.setText("Rp. " + asuransi);
                 totalBayar.setText("Rp. " + formatregas);
+                asuransiView.setText("Rp. " + asuransi);
+                totalbayarView.setText("Rp. " + formatregas);
             }
             if (TIDAKAsuransi.isSelected()) {
                 String formatons = df.format(paket.totalBiayaSDSNonAsuransi(indexKota));
                 totalBayar.setText("Rp. " + formatons);
                 asuransiTransaksi.setText("NO");
+                totalbayarView.setText("Rp. " + formatons);
+                asuransiView.setText("NO");
             }
             jnsLayananTransaksi.setText("SDS");
             KETTIPE.setText("Ket. 0 hari");
+            jnsLayananView.setText("SDS");
         }
         JOptionPane.showMessageDialog(rootPane, "Data Berhasil Disimpan.");
         } catch(Exception e){
@@ -1668,6 +1720,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1720,6 +1773,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser tglkirimpaketDateChooser;
     private javax.swing.JTextField tinggiPaket;
     private javax.swing.JLabel totalBayar;
+    private javax.swing.JLabel totalbayarView;
     private javax.swing.JButton viewButton;
     private javax.swing.JDialog viewDialog;
     // End of variables declaration//GEN-END:variables
