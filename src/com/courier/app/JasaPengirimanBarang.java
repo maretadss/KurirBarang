@@ -458,13 +458,14 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
                         .addComponent(beratView)
                         .addComponent(jLabel55)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel52)
-                    .addComponent(jnsPembayaranView)
-                    .addComponent(jLabel49)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(dimensiView)
-                    .addComponent(jLabel56)
-                    .addComponent(jLabel59))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel52)
+                        .addComponent(jnsPembayaranView)
+                        .addComponent(jLabel49)
+                        .addComponent(jLabel56)
+                        .addComponent(jLabel59)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel53)
@@ -1438,7 +1439,7 @@ public class JasaPengirimanBarang extends javax.swing.JFrame {
         pengirimView.setText("" + namaPengirim.getText()+"\n" + alamatPegirirm.getText() 
                               + "\n" + kotaPengirimComboBox.getSelectedItem()
         + ", " + provPengirimComboBox.getSelectedItem() + "\nKode Pos : " + kdposPengirim.getText()
-        +"\n No. Hp : " + nohpPengirim.getText());
+        +"\nNo. Hp : " + nohpPengirim.getText());
         
 
         //PENERIMA
